@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================================
+       SECTION 01 — PAGE SETUP
+       ========================================================= -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!---tab name-->
+  <title>HM LPG Logistics | LPG Transportation & Logistics</title>
+
+  <meta
+    name="description"
+    content="HM LPG Logistics provides reliable LPG transportation and logistics services for businesses in Malaysia."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <!-- =========================================================
+       SECTION 02 — WEBSITE COLOURS & GLOBAL STYLES
+       ========================================================= -->
+
+  <style>
+    :root {
+      --black: #11130f;
+      --dark: #171a14;
+
+      --yellow: #c3cf16;
+      --yellow-light: #d7e52a;
+
+      --cream: #f7f7f1;
+      --white: #ffffff;
+
+      --grey: #666b60;
+      --light-grey: #e2e4d9;
+
+      --border: rgba(17, 19, 15, 0.12);
+
+      --font-heading: "Manrope", sans-serif;
+      --font-body: "DM Sans", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .section-description {
+      color: var(--grey);
+      max-width: 650px;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 23px;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 700;
+      border-radius: 4px;
+      transition: 0.25s ease;
+    }
+
+    .button:hover {
+      background: var(--yellow-light);
+      transform: translateY(-2px);
+    }
+
+    .button-dark {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .button-dark:hover {
+      background: #292d24;
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 03 — NAVIGATION BAR
+       ========================================================= -->
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">HM</span>
+        <span class="logo-text">LPG LOGISTICS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-button">Get in Touch</a>
+    </div>
+  </header>
+
+  <style>
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(247, 247, 241, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      background: var(--black);
+      color: var(--yellow);
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .logo-text {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #41453c;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--black);
+    }
+
+    .nav-button {
+      padding: 11px 17px;
+      background: var(--black);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-inner {
+        min-height: 70px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 04 — HERO / MAIN HEADLINE
+       ========================================================= -->
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">LPG TRANSPORTATION & LOGISTICS</div>
+
+        <h1>
+          Moving gas.
+          <span>Keeping business moving.</span>
+        </h1>
+
+        <p class="hero-description">
+          Reliable LPG transportation and logistics solutions connecting suppliers with businesses safely, efficiently and on schedule.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="button">Talk to Us</a>
+          <a href="#services" class="button button-dark">Our Services</a>
+        </div>
+      </div>
+
+      <!-- Hero visual with Lifted & Enlarged Friendly LPG Truck -->
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="road">
+            <div class="friendly-lpg-truck">
+              <!-- CABIN -->
+              <div class="cabin">
+                <div class="cabin-window"></div>
+                <div class="headlight"></div>
+              </div>
+
+              <!-- CHASSIS -->
+              <div class="chassis"></div>
+
+              <!-- SOFT-EDGED RECTANGLE LPG TANK -->
+              <div class="soft-tank">
+                <div class="tank-strap strap-left"></div>
+                <div class="tank-strap strap-right"></div>
+                <div class="tank-badge">HM LPG</div>
+              </div>
+
+              <!-- WHEELS -->
+              <div class="wheels">
+                <div class="wheel w-1"></div>
+                <div class="wheel w-2"></div>
+                <div class="wheel w-3"></div>
+                <div class="wheel w-4"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-caption">
+            <span>HM LPG LOGISTICS</span>
+            <strong>Safe. Reliable. On Time.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .hero {
+      padding: 100px 0 110px;
+      background: linear-gradient(135deg, var(--cream) 0%, #f1f2e9 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 7px 11px;
+      background: var(--black);
+      color: var(--yellow);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(52px, 7vw, 88px);
+      line-height: 0.98;
+      letter-spacing: -5px;
+      max-width: 700px;
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: 13px;
+      color: var(--yellow);
+      position: relative;
+      width: fit-content;
+    }
+
+    .hero h1 span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -9px;
+      width: 58px;
+      height: 5px;
+      background: var(--black);
+    }
+
+    .hero-description {
+      max-width: 570px;
+      margin-top: 35px;
+      color: var(--grey);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .visual-card {
+      min-height: 450px;
+      background: var(--black);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+    }
+
+    .road {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 90px;
+      height: 160px;
+      background: #292c25;
+    }
+
+    .road::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 78px;
+      height: 5px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--yellow) 0,
+        var(--yellow) 65px,
+        transparent 65px,
+        transparent 120px
+      );
+    }
+
+    /* =========================================================
+       FRIENDLY SOFT-EDGED LPG TRUCK (ENLARGED & RAISED UP)
+       ========================================================= */
+
+    .friendly-lpg-truck {
+      position: absolute;
+      left: 50%;
+      bottom: 38px; /* Elevated higher on screen */
+      transform: translateX(-50%) scale(1.18); /* Made larger */
+      width: 330px;
+      height: 120px;
+      z-index: 2;
+    }
+
+    /* CABIN */
+    .cabin {
+      position: absolute;
+      left: 0;
+      bottom: 18px;
+      width: 85px;
+      height: 75px;
+      background: var(--yellow);
+      border-radius: 16px 8px 4px 6px;
+      z-index: 3;
+    }
+
+    .cabin-window {
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      width: 55px;
+      height: 32px;
+      background: #1d2019;
+      border-radius: 10px 4px 4px 4px;
+      border-bottom: 2px solid #aeb814;
+    }
+
+    .headlight {
+      position: absolute;
+      bottom: 12px;
+      left: 4px;
+      width: 8px;
+      height: 14px;
+      background: #ffffff;
+      border-radius: 3px;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    }
+
+    /* CHASSIS BASE */
+    .chassis {
+      position: absolute;
+      bottom: 16px;
+      left: 20px;
+      width: 295px;
+      height: 12px;
+      background: #22251e;
+      border-radius: 4px;
+      z-index: 1;
+    }
+
+    /* SOFT RECTANGLE LPG TANK */
+    .soft-tank {
+      position: absolute;
+      right: 0;
+      bottom: 30px;
+      width: 235px;
+      height: 65px;
+      background: linear-gradient(180deg, #ffffff 0%, #e9ece3 100%);
+      border-radius: 20px; /* Soft rounded edges */
+      box-shadow: inset 0 -4px 8px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .tank-strap {
+      position: absolute;
+      top: -2px;
+      width: 6px;
+      height: 69px;
+      background: var(--yellow);
+      border-radius: 2px;
+    }
+
+    .strap-left { left: 45px; }
+    .strap-right { right: 45px; }
+
+    .tank-badge {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: #3b3f33;
+      background: var(--cream);
+      padding: 4px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    /* WHEELS */
+    .wheels {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 32px;
+      z-index: 4;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: 0;
+      width: 32px;
+      height: 32px;
+      background: #111;
+      border: 6px solid #484d40;
+      border-radius: 50%;
+    }
+
+    .w-1 { left: 24px; }
+    .w-2 { right: 75px; }
+    .w-3 { right: 20px; }
+    .w-4 { left: 100px; }
+
+    /* CAPTION & RESPONSIVE DESIGN */
+    .visual-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background: #1d2019;
+      color: var(--white);
+    }
+
+    .visual-caption span {
+      font-size: 11px;
+      color: var(--yellow);
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    .visual-caption strong {
+      font-family: var(--font-heading);
+      font-size: 15px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+      .hero {
+        padding-top: 70px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 48px;
+        letter-spacing: -3px;
+      }
+      .visual-card {
+        min-height: 360px;
+      }
+      .friendly-lpg-truck {
+        transform: translateX(-50%) scale(0.95);
+        bottom: 25px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 05 — TRUST / QUICK BUSINESS STATEMENT
+       ========================================================= -->
+
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div>
+        <strong>01</strong>
+        <span>Reliable Delivery</span>
+      </div>
+      <div>
+        <strong>02</strong>
+        <span>Business-to-Business</span>
+      </div>
+      <div>
+        <strong>03</strong>
+        <span>Safety Focused</span>
+      </div>
+      <div>
+        <strong>04</strong>
+        <span>Operational Efficiency</span>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .trust-bar {
+      background: var(--yellow);
+      padding: 25px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .trust-grid div {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-grid strong {
+      font-family: var(--font-heading);
+      font-size: 13px;
+    }
+
+    .trust-grid span {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 06 — ABOUT US
+       ========================================================= -->
+
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div>
+        <span class="section-label">ABOUT HM LPG LOGISTICS</span>
+        <h2 class="section-title">We keep essential supply chains moving.</h2>
+      </div>
+
+      <div>
+        <p class="section-description">
+          HM LPG Logistics provides transportation and logistics services for businesses that depend on reliable LPG supply.
+        </p>
+        <p class="section-description about-second">
+          We move LPG from suppliers to business customers safely, efficiently and according to operational requirements.
+        </p>
+        <a href="#contact" class="text-link">Speak with our team →</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .section {
+      padding: 110px 0;
+    }
+
+    .about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+    }
+
+    .about-second {
+      margin-top: 22px;
+    }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      border-bottom: 2px solid var(--yellow);
+      padding-bottom: 4px;
+    }
+
+    @media (max-width: 800px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 07 — SERVICES
+       ========================================================= -->
+
+  <section id="services" class="section services">
+    <div class="container">
+      <span class="section-label">WHAT WE DO</span>
+      <h2 class="section-title">Logistics built around business operations.</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="service-number">01</span>
+          <h3>LPG Transportation</h3>
+          <p>Transportation of LPG cylinders between suppliers, distribution points and business customers.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <h3>Scheduled Delivery</h3>
+          <p>Delivery operations planned around customer requirements and agreed schedules.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <h3>Business Logistics</h3>
+          <p>Practical logistics support designed for businesses that depend on consistent LPG supply.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">04</span>
+          <h3>Supply Chain Support</h3>
+          <p>Supporting the movement of LPG through the supply chain from supplier to end business customer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .services {
+      background: var(--cream);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 55px;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+    }
+
+    .service-card {
+      padding: 42px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      min-height: 250px;
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      background: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .service-number {
+      display: block;
+      color: var(--yellow);
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 25px;
+      margin-bottom: 14px;
+    }
+
+    .service-card p {
+      color: var(--grey);
+      max-width: 450px;
+    }
+
+    @media (max-width: 650px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .service-card {
+        padding: 30px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 08 — WHY CHOOSE US
+       ========================================================= -->
+
+  <section id="why-us" class="section why-us">
+    <div class="container why-grid">
+      <div class="why-left">
+        <span class="section-label">WHY HM LPG LOGISTICS</span>
+        <h2 class="section-title">Transport that businesses can rely on.</h2>
+        <p class="section-description">
+          In LPG logistics, consistency matters. Our operations are focused on dependable transportation, clear coordination and responsible handling.
+        </p>
+      </div>
+
+      <div class="why-list">
+        <div class="why-item">
+          <span>01</span>
+          <div>
+            <h3>Reliable Operations</h3>
+            <p>Delivery planning and transportation organised around business requirements.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <span>02</span>
+          <div>
+            <h3>Safety Conscious</h3>
+            <p>Responsible transportation practices are central to our logistics operations.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <span>03</span>
+          <div>
+            <h3>B2B Focused</h3>
+            <p>We understand the importance of dependable supply for business operations.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <span>04</span>
+          <div>
+            <h3>Practical & Efficient</h3>
+            <p>We focus on getting the job done efficiently without unnecessary complexity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .why-us {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 100px;
+    }
+
+    .why-us .section-label,
+    .why-us .section-description {
+      color: #a9ad9f;
+    }
+
+    .why-list {
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .why-item {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 20px;
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .why-item > span {
+      color: var(--yellow);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .why-item h3 {
+      font-family: var(--font-heading);
+      font-size: 21px;
+      margin-bottom: 7px;
+    }
+
+    .why-item p {
+      color: #a9ad9f;
+      font-size: 15px;
+    }
+
+    @media (max-width: 800px) {
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 09 — SIMPLE CALL TO ACTION
+       ========================================================= -->
+
+  <section class="cta">
+    <div class="container cta-inner">
+      <div>
+        <span class="section-label">WORK WITH US</span>
+        <h2>Looking for a reliable LPG logistics partner?</h2>
+      </div>
+
+      <a href="#contact" class="button">Contact HM LPG Logistics</a>
+    </div>
+  </section>
+
+  <style>
+    .cta {
+      background: var(--yellow);
+      padding: 70px 0;
+    }
+
+    .cta .section-label {
+      color: #34372b;
+      margin-bottom: 12px;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      max-width: 700px;
+    }
+
+    @media (max-width: 700px) {
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 10 — CONTACT SECTION
+       ========================================================= -->
+
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <span class="section-label">CONTACT</span>
+        <h2 class="section-title">Let's move business forward.</h2>
+        <p class="section-description">
+          Have a logistics requirement or want to discuss working together? Get in touch with HM LPG Logistics.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        
+        <div class="contact-row">
+          <span>LOCATION</span>
+          <p>
+            Jalan Pandan Raya,<br>
+            Kampung Pandan Dalam,<br>
+            55100 Kuala Lumpur,<br>
+            Selangor, Malaysia
+          </p>
+        </div>
+
+        <div class="contact-row">
+          <span>EMAIL</span>
+          <a href="mailto:hajjah_mek@yahoo.com">
+          hajjah_mek@yahoo.com
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span>PHONE</span>
+          <a href="tel:0392817961">03-92817961</a>
+        </div>
+
+        <div class="contact-row">
+          <span>WHATSAPP</span>
+          <a href="https://wa.me/60173355320" target="_blank">Chat on WhatsApp →</a>
+        </div>
+        <div class="contact-form">
+
+  <h3>Get in Touch</h3>
+
+  <form action="#" method="post">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact</label>
+      <input
+        type="tel"
+        id="contact"
+        name="contact"
+        placeholder="Enter your phone number"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message <span>(Optional)</span></label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Tell us how we can help..."
+        rows="5"
+      ></textarea>
+    </div>
+
+    <button type="submit">Send Message →</button>
+
+  </form>
+
+</div>
+        <a
+          href="https://wa.me/60173355320?text=Hello%20HM%20LPG%20Logistics%2C%20I%20would%20like%20to%20discuss%20your%20LPG%20logistics%20services."
+          target="_blank"
+          class="button contact-button"
+        >
+          Send an Enquiry
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    
+/* =========================================================
+   GET IN TOUCH FORM
+   ========================================================= */
+
+.contact-form {
+  margin-top: 40px;
+  padding-top: 35px;
+  border-top: 1px solid var(--border);
+}
+
+.form-heading {
+  margin-bottom: 28px;
+}
+
+.form-label {
+  display: block;
+  color: var(--grey);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.form-heading h3 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.form-heading p {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 9px;
+}
+
+.form-group label > span:first-child {
+  color: #a1aa0e;
+}
+
+.form-group .optional {
+  color: var(--grey);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+  background: var(--white);
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a1a498;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--yellow);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--yellow);
+  color: var(--black);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.form-submit span {
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.form-submit:hover {
+  background: var(--yellow-light);
+}
+
+.form-submit:hover span {
+  transform: translateX(5px);
+}
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: var(--cream);
+      padding: 35px;
+    }
+
+    .contact-row {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:first-child {
+      padding-top: 0;
+    }
+
+    .contact-row > span {
+      display: block;
+      color: var(--grey);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-bottom: 7px;
+    }
+
+    .contact-row a {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .contact-row p {
+      color: #44483f;
+      line-height: 1.7;
+    }
+
+    .contact-button {
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 800px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 11 — FOOTER
+       ========================================================= -->
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-logo">HM LPG LOGISTICS (314136-T)</div>
+        <p>LPG transportation & logistics.</p>
+      </div>
+
+      <div class="footer-right">
+        <p>Copyright © 2026 HM LPG Logistics. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--yellow);
+      margin-bottom: 5px;
+    }
+
+    .footer p {
+      color: #8d9186;
+      font-size: 13px;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-right a {
+      color: var(--yellow);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 650px) {
+      .footer-inner,
+      .footer-right {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <!-- =========================================================
+       SECTION 12 — JAVASCRIPT
+       ========================================================= -->
+
+  <script>
+    console.log("HM LPG Logistics website loaded successfully.");
+  </script>
+
+</body>
+</html>
